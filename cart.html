@@ -29,85 +29,42 @@
     <div class="block">
       <div class="links">
         <div class="logo">
-          <a href="/"><img src="static/img/image.svg" alt=""></a>
+          <a href="/"><img id="logo_img" src="static/img/Group 1.svg" alt=""></a>
         </div>
         <ul>
           <li>
             <div class="search">
-              <form id="search-box">
-                <i class="fas fa-search"></i>
+              <form id="search">
+                <select name="dropbtn" id="selection">
+                  <option>Order</option>
+                  <option>Consult</option>
+                  <option>Diagnostic</option>
+                </select>
                 <input type="search" placeholder="Search">
+                <button type="submit">search</button>
               </form>
             </div>
           </li>
-          <li><a href="/">
-              <div class="homebutton neurobutton">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                  class="bi bi-house-door" viewBox="0 0 16 16">
-                  <path
-                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
-                </svg>
-              </div>
-            </a></li>
           <li><a href="#">
-              <div class="orderbutton neurobutton">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-ul"
-                  viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                </svg>
+              <div class="promo">
+                <h5>Have a promo code ?</h5>
+                <p>Use Here !!!</p>
               </div>
             </a></li>
-          <li><a href="cart.html">
-              <div class="cartbutton neurobutton active">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
-                    fill="currentColor" />
-                  <path
-                    d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
-                    fill="currentColor" />
-                  <path
-                    d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
-                    fill="currentColor" />
-                </svg>
-              </div>
-            </a></li>
-          <li><a href="auth/login.html"><img src="static/img/user.png" alt=""></a></li>
         </ul>
       </div>
-
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <label for="">Tranding</label>
-        <a href="#">Search Doctors</a>
-        <a href="#">Ask Question</a>
-        <a href="#">Upload Prescription</a>
-
-        <!-- break -->
-
-        <label for="">Services</label>
-        <a href="#">My Orders</a>
-        <a href="#">Request Medicine</a>
-        <a href="#">Medicine Reminder</a>
-        <a href="#">View Doctor Profile</a>
-        <a href="#">Book Video Consultation</a>
-        <a href="#">Book Home Visit</a>
-        <a href="#">Book Clinic Visit</a>
-        <a href="#">Refer & Earn</a>
+      <div class="right">
+       <ul>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        <li><a href="auth/login.html"><i class="fas fa-user"></i> Login / Register</a></li>
+       </ul>
       </div>
       <div id="side_nav" class="side_nav">
         <ul>
-          <li><span class="fas fa-bars" onclick="openNav()">
-              <p>All</p>
-            </span>
-          </li>
-          <li><a href="#"></a>Prescription</li>
-          <li><a href="#"></a>Wallet</li>
-          <li><a href="#"></a>Refer & Earn</li>
-          <li><a href="#"></a>Health Blog</li>
-          <li><a href="#"></a>Ask Question</li>
-          <li><a href="#"></a>Support</li>
+          <li><a href="#">Order Medicine</a></li>
+          <li><a href="#">Diagnostic Tests</a></li>
+          <li><a href="#">Doctor Consult</a></li>
+          <li><a href="#">Upload Prescription</a></li>
         </ul>
       </div>
   </nav>

@@ -1,16 +1,3 @@
-// hide bottom nav on scroll
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("side_nav").style.display = "none";
-        document.getElementById("navbar").style.height ="7rem"
-    } else {
-        document.getElementById("side_nav").style.display = "inline";
-        document.getElementById("navbar").style.height ="auto"
-    }
-}
-
 $(function () {
     // hide comments
     $('.hideComments').on('click', function () {

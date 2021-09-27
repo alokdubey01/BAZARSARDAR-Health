@@ -59,6 +59,30 @@
           <li><a href="#">Upload Prescription</a></li>
         </ul>
       </div>
+      </div>
+<div class="sidebar">
+  <a href="#menu" id="toggle"><span></span></a>
+
+  <div id="menu">
+    <ul>
+      <li><a href="#">Order Medicine</a></li>
+      <li><a href="#">Diagnostic Tests</a></li>
+      <li><a href="#">Doctor Consult</a></li>
+      <li><a href="#">Upload Prescription</a></li>
+      <li>
+        <form action="" class="search_inline">
+          <select name="dropbtn" id="selection">
+            <option>Order</option>
+            <option>Consult</option>
+            <option>Diagnostic</option>
+          </select>
+          <input type="search" name="search" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+      </li>
+    </ul>
+  </div>
+</div>
   </nav>
   <!-- end navbar -->
   <!-- banner slider -->
@@ -628,7 +652,7 @@
   <script src="static/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="static/js/multislider.min.js"></script>
-  <!-- <script>
+  <script>
     $('#blogSlider').multislider({
       duration: 750,
       interval: 3000
@@ -637,7 +661,7 @@
       duration: 750,
       interval: 3000
     });
-  </script> -->
+  </script>
 </body>
 
 </html>

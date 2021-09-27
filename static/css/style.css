@@ -200,7 +200,103 @@ nav {
     transition: margin-left .5s;
     padding   : 20px;
 }
+.sidebar{
+    position: absolute;
+    display: none;
+}
+#toggle {
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin: 30px 0px 10px;
+  }
 
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: block;
+    margin-left: 19em;
+  }
+  
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-light);
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #menu {
+    position: relative;
+    color: #999;
+    width: 100%;
+    height: 11rem;
+    padding: 10px;
+    margin-top: -0.5rem;
+    margin-right: 15rem;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+  }
+#menu:after {
+  position: absolute;
+  top: -15px;
+  left: 305px;
+  content: "";
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+ .sidebar ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar li a {
+    padding: 5px;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  .sidebar li a:hover,
+  .sidebar li a:focus {
+    background: var(--main-color);
+    color: #fff;
+  }
 section {
     color: #000;
 }
@@ -1965,7 +2061,6 @@ a.remove:hover {
     padding  : .5em 2em;
 }
 
-/* TOTAL AND CHECKOUT  */
 .subtotal {
     float: right;
     width: 35%;
@@ -2085,43 +2180,74 @@ a.remove:hover {
         position: absolute;
         left: 5px;
     }
+    .side_nav{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
     .search{
-        margin-top: -2rem;
-        left: 55px;
+        display: none;
+    }
+    .side_nav ul{
+        display: none;
+        display: none;
     }
     .logo img{
         height: 5em;
     }
-    .search form button{
-        top: 0;
-        right: -7rem;
-        height: 3em;
-        border-bottom: 2px solid var(--main-color);
-        border-right: 2px solid var(--main-color);
+    .slides{
+        padding-top:5rem;
     }
-    .search form select{
-        height: 3em;
-        border-bottom: 2px solid var(--main-color);
-        border-left: 2px solid var(--main-color);
+    #navbar{
+        height: 5rem;
+    }
+    .sidebar{
+        display: inline;
+        top: 70%;
+        right: 0;
+        transform: translateY(-20%);
+        margin-right: -40px;
+    }
+    .logo{
+        height: 2px;
+        width: 2px;
+    }
+    .logo a img{
+        height: 6rem;
+        width: 6rem;
+    }
+    .search_inline{
+        position: absolute;
+        display: flex;
+        margin-top: 6px;
+        border: 1.5px solid var(--color-dark);
+        border-radius: 10px;
+        left: 10%;
+    }
+    .search_inline input{
+        height: 2em;
+        width: 15rem;
+        padding-left: 5rem;
+        border: none;
+        outline: none;
         border-radius: 10px 0px 0px 10px;
     }
-    .search form input{
-        height: 3em;
-        border-bottom: 2px solid var(--main-color);
+    .search_inline select{
+        position: absolute;
+        width: 5.4em;
+        height: 2em;
+        outline: none;
+        border: none;
+        border-radius: 10px 0px 0px 10px;
     }
-    .side_nav ul li:nth-child(2){
-        display: none;
-    }
-    .side_nav ul{
-        margin-top: -1px;
-        padding-left: 50%;
-    }
-    .slides{
-        padding-top: 13rem;
-    }
-    .right{
-        margin-top: -100px;
-    }
+    .search_inline button{
+        position: relative;
+        border-radius: 0px 10px 10px 0px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        }
 }
 
 @media(max-width:600px) {

@@ -4,9 +4,10 @@ window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("side_nav").style.display = "none";
-        document.getElementById("logo").style.height = "12px";
+        document.getElementById("navbar").style.height ="7rem"
     } else {
         document.getElementById("side_nav").style.display = "inline";
+        document.getElementById("navbar").style.height ="auto"
     }
 }
 

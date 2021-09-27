@@ -2072,7 +2072,7 @@ a.remove:hover {
     }
 
     .search {
-        margin-top: -3rem;
+        margin-top: -6rem;
         right     : 1rem;
         position  : absolute;
     }
@@ -2089,9 +2089,25 @@ a.remove:hover {
         margin-top: -2rem;
         left: 55px;
     }
-    .search button{
+    .logo img{
+        height: 5em;
+    }
+    .search form button{
         top: 0;
         right: -7rem;
+        height: 3em;
+        border-bottom: 2px solid var(--main-color);
+        border-right: 2px solid var(--main-color);
+    }
+    .search form select{
+        height: 3em;
+        border-bottom: 2px solid var(--main-color);
+        border-left: 2px solid var(--main-color);
+        border-radius: 10px 0px 0px 10px;
+    }
+    .search form input{
+        height: 3em;
+        border-bottom: 2px solid var(--main-color);
     }
     .side_nav ul li:nth-child(2){
         display: none;
@@ -2101,10 +2117,10 @@ a.remove:hover {
         padding-left: 50%;
     }
     .slides{
-        padding-top: 14rem;
+        padding-top: 13rem;
     }
     .right{
-        margin-top: -110px;
+        margin-top: -100px;
     }
 }
 

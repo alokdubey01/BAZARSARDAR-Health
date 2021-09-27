@@ -159,7 +159,7 @@ nav {
     border       : none;
     padding-left : 10px;
     width: 80px;
-    border-radius: var(--simple-rd);
+    border-radius: 10px 0px 0px 10px;
 }
 
 .search form i {

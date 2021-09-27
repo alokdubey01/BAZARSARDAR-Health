@@ -25,6 +25,7 @@
 </head>
 
 <body>
+  <!-- navbar -->
   <nav id="navbar">
     <div class="block">
       <div class="links">
@@ -67,7 +68,32 @@
           <li><a href="#">Upload Prescription</a></li>
         </ul>
       </div>
-  </nav>
+      </div>
+<div class="sidebar">
+  <a href="#menu" id="toggle"><span></span></a>
+
+  <div id="menu">
+    <ul>
+      <li><a href="#">Order Medicine</a></li>
+      <li><a href="#">Diagnostic Tests</a></li>
+      <li><a href="#">Doctor Consult</a></li>
+      <li><a href="#">Upload Prescription</a></li>
+      <li>
+        <form action="" class="search_inline">
+          <select name="dropbtn" id="selection">
+            <option>Order</option>
+            <option>Consult</option>
+            <option>Diagnostic</option>
+          </select>
+          <input type="search" name="search" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<!-- end navbar -->
   <div class="wrap cf">
     <div class="heading cf">
       <h1>My Cart</h1>

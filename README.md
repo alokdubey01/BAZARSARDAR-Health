@@ -2,20 +2,6 @@
 # BazarSardar Health
 
 BazarSardar - Health is a heathcare compnay which is  located at Kolkata, India.
-
-## Authors
-
-- [@alokdubey01](https://github.com/alokdubey01)
-
-
-## License
-
-See all thr licenses: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-
 ## Color Reference
 
 | Color             | Hex                                                                |
@@ -32,10 +18,24 @@ See all thr licenses: [shields.io](https://shields.io/)
 https://bazarsardar.herokuapp.com/
 
 
+## Authors
+
+- [@alokdubey01](https://github.com/alokdubey01)
+
+
 ## 🚀 About Me
 Hello, I am Alok Kumar Dubey an app and software developer. I have a good knowledge in machine learning and web/app developemrnt.
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://alokd_07.w3spaces.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/alokd07/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/alokd_07)
+
+
+## License
+
+See all thr licenses: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
